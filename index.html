@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>シンプル音楽シーケンサー</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Tone.jsをCDNから読み込み -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>シンプル音楽シーケンサー</h1>
+      <div class="controls">
+        <button id="play-button">再生</button>
+        <button id="stop-button">停止</button>
+        <div class="tempo-control">
+          <label for="tempo">テンポ: </label>
+          <input type="range" id="tempo" min="60" max="180" value="120">
+          <span id="tempo-value">120</span> BPM
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="sequencer-container">
+        <div class="step-indicators">
+          <div class="step-indicator">1</div>
+          <div class="step-indicator">2</div>
+          <div class="step-indicator">3</div>
+          <div class="step-indicator">4</div>
+          <div class="step-indicator">5</div>
+          <div class="step-indicator">6</div>
+          <div class="step-indicator">7</div>
+          <div class="step-indicator">8</div>
+          <div class="step-indicator">9</div>
+          <div class="step-indicator">10</div>
+          <div class="step-indicator">11</div>
+          <div class="step-indicator">12</div>
+          <div class="step-indicator">13</div>
+          <div class="step-indicator">14</div>
+          <div class="step-indicator">15</div>
+          <div class="step-indicator">16</div>
+        </div>
+        
+        <div class="grid-container">
+          <div class="instrument-labels">
+            <div class="instrument-label">キック</div>
+            <div class="instrument-label">スネア</div>
+            <div class="instrument-label">ハイハット</div>
+            <div class="instrument-label">クラップ</div>
+            <div class="instrument-label">ベース</div>
+            <div class="instrument-label">シンセ</div>
+            <div class="instrument-label">ピアノ</div>
+            <div class="instrument-label">FX</div>
+          </div>
+          
+          <div class="sequencer-grid" id="sequencer-grid">
+            <!-- 8種類の楽器 x 16ステップのグリッド -->
+            <!-- JavaScript で動的に生成 -->
+          </div>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <button id="clear-button">クリア</button>
+        <button id="save-button">保存</button>
+        <button id="load-button">読み込み</button>
+      </div>
+    </main>
+    
+    <footer>
+      <p>Powered by <a href="https://tonejs.github.io/" target="_blank">Tone.js</a> | <a href="https://github.com/yourusername/simple-sequencer" target="_blank">GitHub</a></p>
+    </footer>
+  </div>
+
+  <script src="tones.js"></script>
+  <script src="sequencer.js"></script>
+</body>
+</html>
