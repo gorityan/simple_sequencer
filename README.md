@@ -69,7 +69,7 @@
 
 2. index.htmlをブラウザで開くだけで使用できます
 
-3. オンラインでも使用できます: [デモページ](https://yourusername.github.io/simple-music-maker)
+3. オンラインでも使用できます: [デモページ](https://gorityan.github.io/simple_sequencer)
 
 ## ブラウザ対応
 
