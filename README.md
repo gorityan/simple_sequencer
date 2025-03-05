@@ -69,7 +69,7 @@
 
 2. index.htmlをブラウザで開くだけで使用できます
 
-3. オンラインでも使用できます: [デモページ](https://gorityan.github.io/simple_sequencer)
+3. オンラインでも使用できます: [デモページ](https://github.com/gorityan/simple_sequencer.git)
 
 ## ブラウザ対応
 
