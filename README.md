@@ -64,7 +64,7 @@
 
 1. このリポジトリをダウンロードまたはクローンします:
    ```
-   git clone https://github.com/yourusername/simple-music-maker.git
+   git clone https://github.com/gorityan/simple-music-maker.git
    ```
 
 2. index.htmlをブラウザで開くだけで使用できます
